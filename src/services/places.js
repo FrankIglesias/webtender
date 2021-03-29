@@ -4,4 +4,4 @@ const api = apisauce.create({
   baseURL: process.env.REACT_APP_API_BASE_URL,
 })
 
-export const findPlace = (input) => api.get('api/place', { input });
+export const findPlace = (place_id) => api.get('api/place', { place_id });
