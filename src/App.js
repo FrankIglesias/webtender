@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import  styles from './App.module.scss';
 import places from './constants';
 import { findPlace } from './services/places';
+import cocktailIcon from './cocktail.svg'
 import ReactMapGL, { Marker } from 'react-map-gl';
-
+import Sidebar from './components/Sidebar'
 const mockPlace = {
   html_attributions: [],
   result: {
@@ -335,18 +336,7 @@ function App() {
   }, []);
   return (
     <div className='App'>
-      {!!Object.keys(selectedPlace).length && <div className={styles.sidebar}>
-        {selectedPlace.name}
-        <div>
-          {selectedPlace.formatted_address}
-        </div>
-        <div>
-          {selectedPlace.formatted_phone_number}
-        </div>
-        <div>
-          {selectedPlace.opening_hours.weekday_text.map(day => <p>{day}</p>)}
-        </div>
-      </div>}
+      <Sidebar place={selectedPlace} />
       <ReactMapGL
         {...mapViewport}
         mapboxApiAccessToken={process.env.REACT_APP_MAPS_API_KEY}
@@ -362,10 +352,10 @@ function App() {
           >
             <span className={styles.barName} onClick={() => setSelectedPlace(place)}>
               <img
-                width='30'
-                src='https://www.pinclipart.com/picdir/middle/205-2057349_cocktail-icon-free-download-png-cocktail-word-svg.png'
+                width='20'
+                src={cocktailIcon}
               />
-              {place.name}
+              {mapViewport.zoom > 15 && place.name}
             </span>
           </Marker>
         ))}
