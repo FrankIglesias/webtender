@@ -13,7 +13,8 @@
     "react-map-gl": "^6.1.11",
     "react-scripts": "4.0.3",
     "sass": "^1.32.8",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "wolox-equalizer": "0.0.3"
   },
   "scripts": {
     "start": "react-app-rewired start",

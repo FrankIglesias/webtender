@@ -1,4 +1,15 @@
+.marker {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  color: white;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .bar-name {
   color: white;
-  cursor: pointer;
 }
