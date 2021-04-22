@@ -4,7 +4,11 @@ import places from './constants';
 import { findPlace } from './services/places';
 import cocktailIcon from './cocktail.svg'
 import ReactMapGL, { Marker } from 'react-map-gl';
+import mapboxgl from "mapbox-gl";
 import Sidebar from './components/Sidebar';
+
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 function App() {
   const [placeList, setPlaceList] = useState([]);
