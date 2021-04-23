@@ -20,5 +20,11 @@ export default [
   'ChIJ7xYq2pK1vJURteFsYbqyP-I', // Trova
   'EiFBbmFzYWdhc3RpLCBDMTQyNSBDQUJBLCBBcmdlbnRpbmEiLiosChQKEgkTAPN9gcq8lRFBUVxHWcbxVBIUChIJu39FBT3KvJURF8D35_z0YOE', // Anagasti
   'ChIJ6dyRD7vKvJURGPaSE7oTNuY', // Presidente bar
-  'ChIJJY8xLrHKvJURGgoMqdg8pXE' // Floreria
+  'ChIJJY8xLrHKvJURGgoMqdg8pXE', // Floreria
+  'ChIJ7Ui_64W1vJURf8WtqqUKNXM', // Nómade
+  'ChIJ1aJZ_VHKvJURtg3KKmxIBPA', // Barrel
+  'ChIJ0T7o7aLKvJURBs_7n_iNBYw', // Cobarde
+  'ChIJtdeaLu21vJURbj8CRrdAIys', // Ser y Tiempo
+  'ChIJPyPCmk_LvJUR16YaeKpgyww', // Rosé
+  'ChIJ8_NtI6LKvJUR5aAL1aji1vI', // Maldini
 ]

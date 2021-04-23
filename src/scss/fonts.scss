@@ -1,0 +1,33 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap';
+
+h1, h2, h3, h4, h5, h6, p, span, label, input, a, button, select, textarea, li {
+  color: white;
+  line-height: 1.2em;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.text {
+  font-size: 1em;
+}
+
+.link {
+  @extend .text;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
